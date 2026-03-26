@@ -1,0 +1,24 @@
+import { createBrowserRouter } from "react-router";
+import { HomePage } from "./pages/HomePage";
+import { LoginPage } from "./pages/LoginPage";
+import { SignupPage } from "./pages/SignupPage";
+import { GamesPage } from "./pages/GamesPage";
+
+export const router = createBrowserRouter([
+  {
+    path: "/",
+    Component: HomePage,
+  },
+  {
+    path: "/login",
+    Component: LoginPage,
+  },
+  {
+    path: "/signup",
+    Component: SignupPage,
+  },
+  {
+    path: "/games",
+    Component: GamesPage,
+  },
+]);
